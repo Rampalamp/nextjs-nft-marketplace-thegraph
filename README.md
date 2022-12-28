@@ -1,34 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1. Home Page:
+    1. Show recently listed NFTs
+        1. If you own the NFT, you can update the listing
+        2. If not, you can buy the listing
+    2. Sell Page:
+        1. You can list your NFT on the marketplace
 
-## Getting Started
+### Note
 
-First, run the development server:
+This mock marketplace is setup to use a graph server, the tutorial generates the bulk of its code by using tools provided by [TheGraph](https://thegraph.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+A decentralized(mostly) way of indexing blockchain data. At the time goerli testnet funds are running dry so I figured I would not bother deploying/using it.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To see an example of a graph/subgraph server that this mock nft marketplace can then use, please see [graph-nft-marketplace-fcc](https://github.com/PatrickAlphaC/graph-nft-marketplace-fcc)
